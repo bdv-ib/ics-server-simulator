@@ -12,7 +12,7 @@
         <relativePath/>
     </parent>
 
-    <groupId>com.example</groupId>
+    <groupId>com.diximonline</groupId>
     <artifactId>cbs-payment-simulator</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>ics-server-simulator</name>
