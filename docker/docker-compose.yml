@@ -1,0 +1,28 @@
+version: '3.9'
+
+services:
+  psamq:
+    image: rmohr/activemq:latest
+    container_name: psamq
+    restart: always
+    ports:
+      - "61616:61616"  # JMS
+      - "8161:8161"    # Web Console
+    environment:
+      ACTIVEMQ_ADMIN_LOGIN: "artemis"
+      ACTIVEMQ_ADMIN_PASSWORD: "admin"
+
+  cbs-simulator:
+    build:
+      context: .
+      dockerfile: Dockerfile/Dockerfile
+    container_name: cbs-payment-simulator
+    depends_on:
+      - psamq
+    restart: always
+    ports:
+      - "8080:8080"   # REST + SOAP
+    environment:
+      SPRING_ACTIVEMQ_BROKER_URL: tcp://psamq:61616
+      SPRING_ACTIVEMQ_USER: artemis
+      SPRING_ACTIVEMQ_PASSWORD: admin

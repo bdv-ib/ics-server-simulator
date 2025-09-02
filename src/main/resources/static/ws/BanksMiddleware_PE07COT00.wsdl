@@ -1,0 +1,196 @@
+<WL5G3N0:definitions xmlns="" xmlns:WL5G3N0="http://schemas.xmlsoap.org/wsdl/"
+                     xmlns:WL5G3N1="http://www.w3.org/2001/XMLSchema"
+                     xmlns:WL5G3N2="http://com/icsfs/banks/ws/BanksMiddleware_PE07COT00.wsdl/types/"
+                     xmlns:WL5G3N3="http://com/icsfs/banks/ws/BanksMiddleware_PE07COT00.wsdl"
+                     xmlns:WL5G3N4="http://schemas.xmlsoap.org/wsdl/soap/"
+                     name="BanksMiddleware_PE07COT00"
+                     targetNamespace="http://com/icsfs/banks/ws/BanksMiddleware_PE07COT00.wsdl">
+    <WL5G3N0:types>
+        <xsd:schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap11-enc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:tns="http://com/icsfs/banks/ws/BanksMiddleware_PE07COT00.wsdl/types/" xmlns:tns0="http://com/icsfs/banks/ws/BanksMiddleware_PE07COT00.wsdl/types/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" elementFormDefault="qualified" targetNamespace="http://com/icsfs/banks/ws/BanksMiddleware_PE07COT00.wsdl/types/">
+            <xsd:complexType name="ObjAchOtrfUserArray">
+                <xsd:sequence>
+                    <xsd:element maxOccurs="unbounded" minOccurs="0" name="ObjAchOtrfUser" nillable="true" type="tns:ObjAchOtrfUser"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="ObjAchOtrfUser">
+                <xsd:complexContent>
+                    <xsd:extension base="tns:ObjAchOtrfBase">
+                        <xsd:sequence>
+                            <xsd:element name="apprTellId" nillable="true" type="decimal"/>
+                            <xsd:element name="intrInstNameAdd" nillable="true" type="string"/>
+                            <xsd:element name="sourceCode" nillable="true" type="decimal"/>
+                            <xsd:element name="ordInstNameAdd" nillable="true" type="string"/>
+                            <xsd:element name="equivAmt" nillable="true" type="decimal"/>
+                            <xsd:element name="benfBankCode" nillable="true" type="decimal"/>
+                            <xsd:element name="traPur" nillable="true" type="decimal"/>
+                            <xsd:element name="intrInstPartyId" nillable="true" type="string"/>
+                            <xsd:element name="crValDate" nillable="true" type="string"/>
+                            <xsd:element name="ordCustAcct" nillable="true" type="string"/>
+                            <xsd:element name="traType" nillable="true" type="decimal"/>
+                            <xsd:element name="remitInfo" nillable="true" type="string"/>
+                            <xsd:element name="crIntDate" nillable="true" type="string"/>
+                            <xsd:element name="braComChg" nillable="true" type="decimal"/>
+                            <xsd:element name="benfBraCode" nillable="true" type="decimal"/>
+                            <xsd:element name="chgAcct" nillable="true" type="string"/>
+                            <xsd:element name="instrAmtFlag" nillable="true" type="decimal"/>
+                            <xsd:element name="exchPermit" nillable="true" type="decimal"/>
+                            <xsd:element name="intrInstOptCode" nillable="true" type="decimal"/>
+                            <xsd:element name="equivBaseAmt" nillable="true" type="decimal"/>
+                            <xsd:element name="refKey" nillable="true" type="string"/>
+                            <xsd:element name="stampsChg" nillable="true" type="decimal"/>
+                            <xsd:element name="corrChg" nillable="true" type="decimal"/>
+                            <xsd:element name="altChgCurCode" nillable="true" type="string"/>
+                            <xsd:element name="ordInstOptCode" nillable="true" type="decimal"/>
+                            <xsd:element name="isoPayCurCode" nillable="true" type="string"/>
+                            <xsd:element name="benfId" nillable="true" type="decimal"/>
+                            <xsd:element name="chgDet" nillable="true" type="decimal"/>
+                            <xsd:element name="apprTraDate" nillable="true" type="string"/>
+                            <xsd:element name="braCode" nillable="true" type="decimal"/>
+                            <xsd:element name="traStaCode" nillable="true" type="decimal"/>
+                            <xsd:element name="isoTraCurCode" nillable="true" type="string"/>
+                            <xsd:element name="ordInstPartyId" nillable="true" type="string"/>
+                            <xsd:element name="multiBenfFlag" nillable="true" type="decimal"/>
+                            <xsd:element name="benfCountry" nillable="true" type="decimal"/>
+                            <xsd:element name="commRate" nillable="true" type="decimal"/>
+                            <xsd:element name="transRemarks" nillable="true" type="string"/>
+                            <xsd:element name="benfCustNameAdd" nillable="true" type="string"/>
+                            <xsd:element name="benfCustAcct" nillable="true" type="string"/>
+                            <xsd:element name="benfBankOptCode" nillable="true" type="decimal"/>
+                            <xsd:element name="tellId" nillable="true" type="decimal"/>
+                            <xsd:element name="reqRef" nillable="true" type="string"/>
+                            <xsd:element name="remarks" nillable="true" type="string"/>
+                            <xsd:element name="fstApprTellId" nillable="true" type="decimal"/>
+                            <xsd:element name="instrAmt" nillable="true" type="decimal"/>
+                            <xsd:element name="covAcct" nillable="true" type="string"/>
+                            <xsd:element name="benfTraAmt" nillable="true" type="decimal"/>
+                            <xsd:element name="acWithInst" nillable="true" type="string"/>
+                            <xsd:element name="swfChgAcct" nillable="true" type="string"/>
+                            <xsd:element name="contactInfo" nillable="true" type="string"/>
+                            <xsd:element name="apprBraCode" nillable="true" type="decimal"/>
+                            <xsd:element name="traDate" nillable="true" type="string"/>
+                            <xsd:element name="traPayType" nillable="true" type="decimal"/>
+                            <xsd:element name="apprFlag" nillable="true" type="decimal"/>
+                            <xsd:element name="custAcct" nillable="true" type="string"/>
+                            <xsd:element name="drValDate" nillable="true" type="string"/>
+                            <xsd:element name="ordCustOptCode" nillable="true" type="decimal"/>
+                            <xsd:element name="cusIdNum" nillable="true" type="string"/>
+                            <xsd:element name="benfCity" nillable="true" type="decimal"/>
+                            <xsd:element name="traStaChgDate" nillable="true" type="string"/>
+                            <xsd:element name="restCode" nillable="true" type="decimal"/>
+                            <xsd:element name="traAmt" nillable="true" type="decimal"/>
+                            <xsd:element name="traServiceType" nillable="true" type="decimal"/>
+                            <xsd:element name="processRem" nillable="true" type="string"/>
+                            <xsd:element name="rejReason" nillable="true" type="string"/>
+                            <xsd:element name="swiftChg" nillable="true" type="decimal"/>
+                            <xsd:element name="cusIdType" nillable="true" type="decimal"/>
+                            <xsd:element name="benfCustOptCode" nillable="true" type="decimal"/>
+                            <xsd:element name="postTlxChg" nillable="true" type="decimal"/>
+                            <xsd:element name="exchRate" nillable="true" type="decimal"/>
+                            <xsd:element name="benfBankPartyId" nillable="true" type="string"/>
+                            <xsd:element name="chgPayType" nillable="true" type="decimal"/>
+                            <xsd:element name="ordCustNameAdd" nillable="true" type="string"/>
+                            <xsd:element name="drIntDate" nillable="true" type="string"/>
+                            <xsd:element name="centComChg" nillable="true" type="decimal"/>
+                            <xsd:element name="exch" nillable="true" type="decimal"/>
+                            <xsd:element name="vatChg" nillable="true" type="decimal"/>
+                        </xsd:sequence>
+                    </xsd:extension>
+                </xsd:complexContent>
+            </xsd:complexType>
+            <xsd:complexType name="ObjAchOtrfBase">
+                <xsd:sequence/>
+            </xsd:complexType>
+        </xsd:schema>
+    </WL5G3N0:types>
+    <WL5G3N0:message name="BanksMiddleware_PE07COT00_e07cot01">
+        <WL5G3N0:part name="iTraType" type="WL5G3N1:decimal"/>
+        <WL5G3N0:part name="iSysSourceCode" type="WL5G3N1:decimal"/>
+        <WL5G3N0:part name="iSouCode" type="WL5G3N1:decimal"/>
+        <WL5G3N0:part name="iTraDate" type="WL5G3N1:string"/>
+        <WL5G3N0:part name="reqLanInd_inout" type="WL5G3N1:decimal"/>
+        <WL5G3N0:part name="inpChannelId_inout" type="WL5G3N1:decimal"/>
+        <WL5G3N0:part name="inpChannelRefNum_inout" type="WL5G3N1:string"/>
+        <WL5G3N0:part name="allAchTra_out" type="WL5G3N2:ObjAchOtrfUserArray"/>
+        <WL5G3N0:part name="outReqId_out" type="WL5G3N1:string"/>
+        <WL5G3N0:part name="outStatus_out" type="WL5G3N1:decimal"/>
+        <WL5G3N0:part name="outMsgTxt_out" type="WL5G3N1:string"/>
+        <WL5G3N0:part name="outProcData_out" type="WL5G3N1:string"/>
+        <WL5G3N0:part name="outDetInfo_out" type="WL5G3N1:string"/>
+        <WL5G3N0:part name="dbAppErr_out" type="WL5G3N1:decimal"/>
+    </WL5G3N0:message>
+    <WL5G3N0:message name="BanksMiddleware_PE07COT00_e07cot01Response">
+        <WL5G3N0:part name="reqLanInd_inout" type="WL5G3N1:decimal"/>
+        <WL5G3N0:part name="inpChannelId_inout" type="WL5G3N1:decimal"/>
+        <WL5G3N0:part name="inpChannelRefNum_inout" type="WL5G3N1:string"/>
+        <WL5G3N0:part name="allAchTra_out" type="WL5G3N2:ObjAchOtrfUserArray"/>
+        <WL5G3N0:part name="outReqId_out" type="WL5G3N1:string"/>
+        <WL5G3N0:part name="outStatus_out" type="WL5G3N1:decimal"/>
+        <WL5G3N0:part name="outMsgTxt_out" type="WL5G3N1:string"/>
+        <WL5G3N0:part name="outProcData_out" type="WL5G3N1:string"/>
+        <WL5G3N0:part name="outDetInfo_out" type="WL5G3N1:string"/>
+        <WL5G3N0:part name="dbAppErr_out" type="WL5G3N1:decimal"/>
+    </WL5G3N0:message>
+    <WL5G3N0:message name="BanksMiddleware_PE07COT00_e07cot02">
+        <WL5G3N0:part name="iBraCode" type="WL5G3N1:decimal"/>
+        <WL5G3N0:part name="iRefType" type="WL5G3N1:decimal"/>
+        <WL5G3N0:part name="iRefYear" type="WL5G3N1:decimal"/>
+        <WL5G3N0:part name="iRefNum" type="WL5G3N1:decimal"/>
+        <WL5G3N0:part name="iSouCode" type="WL5G3N1:decimal"/>
+        <WL5G3N0:part name="reqLanInd_inout" type="WL5G3N1:decimal"/>
+        <WL5G3N0:part name="inpChannelId_inout" type="WL5G3N1:decimal"/>
+        <WL5G3N0:part name="inpChannelRefNum_inout" type="WL5G3N1:string"/>
+        <WL5G3N0:part name="outReqId_out" type="WL5G3N1:string"/>
+        <WL5G3N0:part name="outStatus_out" type="WL5G3N1:decimal"/>
+        <WL5G3N0:part name="outMsgTxt_out" type="WL5G3N1:string"/>
+        <WL5G3N0:part name="outProcData_out" type="WL5G3N1:string"/>
+        <WL5G3N0:part name="outDetInfo_out" type="WL5G3N1:string"/>
+        <WL5G3N0:part name="dbAppErr_out" type="WL5G3N1:decimal"/>
+    </WL5G3N0:message>
+    <WL5G3N0:message name="BanksMiddleware_PE07COT00_e07cot02Response">
+        <WL5G3N0:part name="reqLanInd_inout" type="WL5G3N1:decimal"/>
+        <WL5G3N0:part name="inpChannelId_inout" type="WL5G3N1:decimal"/>
+        <WL5G3N0:part name="inpChannelRefNum_inout" type="WL5G3N1:string"/>
+        <WL5G3N0:part name="outReqId_out" type="WL5G3N1:string"/>
+        <WL5G3N0:part name="outStatus_out" type="WL5G3N1:decimal"/>
+        <WL5G3N0:part name="outMsgTxt_out" type="WL5G3N1:string"/>
+        <WL5G3N0:part name="outProcData_out" type="WL5G3N1:string"/>
+        <WL5G3N0:part name="outDetInfo_out" type="WL5G3N1:string"/>
+        <WL5G3N0:part name="dbAppErr_out" type="WL5G3N1:decimal"/>
+    </WL5G3N0:message>
+    <WL5G3N0:portType name="BanksMiddleware_PE07COT00">
+        <WL5G3N0:operation name="e07cot01" parameterOrder="iTraType iSysSourceCode iSouCode iTraDate reqLanInd_inout inpChannelId_inout inpChannelRefNum_inout allAchTra_out outReqId_out outStatus_out outMsgTxt_out outProcData_out outDetInfo_out dbAppErr_out">
+            <WL5G3N0:input message="WL5G3N3:BanksMiddleware_PE07COT00_e07cot01"/>
+            <WL5G3N0:output message="WL5G3N3:BanksMiddleware_PE07COT00_e07cot01Response"/>
+        </WL5G3N0:operation>
+        <WL5G3N0:operation name="e07cot02" parameterOrder="iBraCode iRefType iRefYear iRefNum iSouCode reqLanInd_inout inpChannelId_inout inpChannelRefNum_inout outReqId_out outStatus_out outMsgTxt_out outProcData_out outDetInfo_out dbAppErr_out">
+            <WL5G3N0:input message="WL5G3N3:BanksMiddleware_PE07COT00_e07cot02"/>
+            <WL5G3N0:output message="WL5G3N3:BanksMiddleware_PE07COT00_e07cot02Response"/>
+        </WL5G3N0:operation>
+    </WL5G3N0:portType>
+    <WL5G3N0:binding name="BanksMiddleware_PE07COT00" type="WL5G3N3:BanksMiddleware_PE07COT00">
+        <WL5G3N4:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <WL5G3N0:operation name="e07cot01">
+            <WL5G3N4:operation soapAction="http://com/icsfs/banks/ws/BanksMiddleware_PE07COT00.wsdl/e07cot01"/>
+            <WL5G3N0:input>
+                <WL5G3N4:body namespace="http://com/icsfs/banks/ws/BanksMiddleware_PE07COT00.wsdl" parts="iTraType iSysSourceCode iSouCode iTraDate reqLanInd_inout inpChannelId_inout inpChannelRefNum_inout allAchTra_out outReqId_out outStatus_out outMsgTxt_out outProcData_out outDetInfo_out dbAppErr_out" use="literal"/>
+            </WL5G3N0:input>
+            <WL5G3N0:output>
+                <WL5G3N4:body namespace="http://com/icsfs/banks/ws/BanksMiddleware_PE07COT00.wsdl" parts="reqLanInd_inout inpChannelId_inout inpChannelRefNum_inout allAchTra_out outReqId_out outStatus_out outMsgTxt_out outProcData_out outDetInfo_out dbAppErr_out" use="literal"/>
+            </WL5G3N0:output>
+        </WL5G3N0:operation>
+        <WL5G3N0:operation name="e07cot02">
+            <WL5G3N4:operation soapAction="http://com/icsfs/banks/ws/BanksMiddleware_PE07COT00.wsdl/e07cot02"/>
+            <WL5G3N0:input>
+                <WL5G3N4:body namespace="http://com/icsfs/banks/ws/BanksMiddleware_PE07COT00.wsdl" parts="iBraCode iRefType iRefYear iRefNum iSouCode reqLanInd_inout inpChannelId_inout inpChannelRefNum_inout outReqId_out outStatus_out outMsgTxt_out outProcData_out outDetInfo_out dbAppErr_out" use="literal"/>
+            </WL5G3N0:input>
+            <WL5G3N0:output>
+                <WL5G3N4:body namespace="http://com/icsfs/banks/ws/BanksMiddleware_PE07COT00.wsdl" parts="reqLanInd_inout inpChannelId_inout inpChannelRefNum_inout outReqId_out outStatus_out outMsgTxt_out outProcData_out outDetInfo_out dbAppErr_out" use="literal"/>
+            </WL5G3N0:output>
+        </WL5G3N0:operation>
+    </WL5G3N0:binding>
+    <WL5G3N0:service name="BanksMiddleware_PE07COT00">
+        <WL5G3N0:port binding="WL5G3N3:BanksMiddleware_PE07COT00" name="BanksMiddleware_PE07COT00Port">
+            <WL5G3N4:address location="http://10.100.102.92:7001/BanksESB_PE07COT00/BanksMiddleware_PE07COT00Port"/>
+        </WL5G3N0:port>
+    </WL5G3N0:service>
+</WL5G3N0:definitions>
