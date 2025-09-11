@@ -13,7 +13,7 @@
     </parent>
 
     <groupId>com.diximonline</groupId>
-    <artifactId>cbs-payment-simulator</artifactId>
+    <artifactId>ics-server-simulator</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>ics-server-simulator</name>
     <description>SOAP + Spring Boot simulator</description>
