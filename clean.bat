@@ -1,4 +1,4 @@
-mvn clean  > clean.log
+mvn clean  > .\logs\clean.log
 pause
 
 

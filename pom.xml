@@ -43,6 +43,11 @@
             <artifactId>spring-ws-core</artifactId>
             <version>4.0.3</version>
         </dependency>
+        <dependency>
+        	<groupId>org.apache.cxf</groupId>
+        	<artifactId>cxf-spring-boot-starter-jaxws</artifactId>
+        	<version>4.0.4</version>
+    	</dependency>
 
         <!-- JAXB -->
         <dependency>
@@ -120,6 +125,28 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>3.2.5</version>
             </plugin>
+            
+            <plugin>
+            	<groupId>org.apache.cxf</groupId>
+            	<artifactId>cxf-codegen-plugin</artifactId>
+            	<version>4.0.4</version>
+            	<executions>
+                	<execution>
+                    	<id>generate-sources</id>
+                    	<phase>generate-sources</phase>
+                    	<configuration>
+                        	<wsdlOptions>
+                            	<wsdlOption>
+                                	<wsdl>${project.basedir}/src/main/resources/static/ws/BanksMiddleware_PE07COT00.wsdl</wsdl>
+                            	</wsdlOption>
+                        	</wsdlOptions>
+                    	</configuration>
+                    	<goals>
+                        	<goal>wsdl2java</goal>
+                    	</goals>
+                	</execution>
+            	</executions>
+        	</plugin>
         </plugins>
     </build>
 </project>

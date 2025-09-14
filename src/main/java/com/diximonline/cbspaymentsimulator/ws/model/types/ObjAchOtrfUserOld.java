@@ -2,7 +2,7 @@ package com.diximonline.cbspaymentsimulator.ws.model.types;
 
 import java.math.BigDecimal;
 
-public class ObjAchOtrfUser {
+public class ObjAchOtrfUserOld {
     public BigDecimal apprTellId;
     public String intrInstNameAdd;
     public BigDecimal sourceCode;

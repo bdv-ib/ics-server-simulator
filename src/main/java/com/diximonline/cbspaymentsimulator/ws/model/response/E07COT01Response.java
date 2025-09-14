@@ -1,6 +1,6 @@
 package com.diximonline.cbspaymentsimulator.ws.model.response;
 
-import com.diximonline.cbspaymentsimulator.ws.model.types.ObjAchOtrfUser;
+import com.diximonline.cbspaymentsimulator.ws.model.types.ObjAchOtrfUserOld;
 import jakarta.xml.bind.annotation.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -40,7 +40,7 @@ public class E07COT01Response {
 
     @XmlElementWrapper(name = "allAchTra_out", nillable = true)
     @XmlElement(name = "ObjAchOtrfUser", nillable = true)
-    public List<ObjAchOtrfUser> allAchTra_out;
+    public List<ObjAchOtrfUserOld> allAchTra_out;
 
     @XmlElement(nillable = true)
     public String outReqId_out;
