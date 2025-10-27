@@ -40,7 +40,7 @@ public class E07COT01Response {
 
     @XmlElementWrapper(name = "allAchTra_out", nillable = true)
     @XmlElement(name = "ObjAchOtrfUser", nillable = true)
-    public List<ObjAchOtrfUserOld> allAchTra_out;
+    public List<com.diximonline.cbspaymentsimulator.acxf.types.ObjAchOtrfUser> allAchTra_out;
 
     @XmlElement(nillable = true)
     public String outReqId_out;
